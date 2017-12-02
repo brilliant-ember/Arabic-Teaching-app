@@ -5,8 +5,10 @@ package com.example.mohammedal.learnarabic;
  */
 
 public class Word {
-    String arabic;
-    String translation;
+    private String arabic;
+    private String translation;
+    private int mImageResourceId;
+
     public Word(String Eng, String Arab){
         this.arabic=Arab;
         this.translation=Eng;
@@ -16,5 +18,8 @@ public class Word {
     }
     public String getTranslation(){
         return translation;
+    }
+    public int getResourceId(){
+        return mImageResourceId;
     }
 }
