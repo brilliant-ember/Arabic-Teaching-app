@@ -2,6 +2,7 @@ package com.example.mohammedal.learnarabic;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,9 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("Sister","اخت"));
         words.add(new Word("Grandfather","جد"));
         words.add(new Word("Grandmother","جدة"));
+
+        ListView root = (ListView) findViewById(R.id.familyRoot);
+        root.setAdapter(new WordsAdapter(this, words));
 
     }
 }
