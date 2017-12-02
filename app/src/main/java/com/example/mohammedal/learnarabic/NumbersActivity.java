@@ -27,7 +27,7 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add(new Word("Ten","عشرة"));
 
         ListView numPage = (ListView) findViewById(R.id.numPage);
-        numPage.setAdapter(new WordsAdapter(getApplicationContext(),numbers));
+        numPage.setAdapter(new WordsAdapter(this,numbers));
 
 
     }

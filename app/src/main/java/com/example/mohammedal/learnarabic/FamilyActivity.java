@@ -21,6 +21,8 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("Grandfather","جد"));
         words.add(new Word("Grandmother","جدة"));
 
+
+
         ListView root = (ListView) findViewById(R.id.familyRoot);
         root.setAdapter(new WordsAdapter(this, words));
 

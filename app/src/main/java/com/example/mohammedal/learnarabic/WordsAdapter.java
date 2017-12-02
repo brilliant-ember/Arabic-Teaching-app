@@ -23,7 +23,7 @@ public class WordsAdapter extends ArrayAdapter {
 
     public View getView(int position,  View convertView,  ViewGroup parent) {
         if (convertView==null){
-            convertView= LayoutInflater.from(getContext()).inflate(R.layout.item_with_pic,parent,false);
+            convertView= LayoutInflater.from(getContext()).inflate(R.layout.item_with_pic, parent,false);
         }
 
         Word theNewWord = (Word) getItem(position);
