@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohammedal.learnarabic.MainActivity">
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:lineSpacingExtra="0sp"
+        android:onClick="openNumbersList"
+        android:text="@string/Numbers"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#9dcf4c"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/Family"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/hobbies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#4ccf6f"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/Hobbies"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#4c94cf"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/Phrases"
+        android:textAlignment="center" />
+
+</LinearLayout>

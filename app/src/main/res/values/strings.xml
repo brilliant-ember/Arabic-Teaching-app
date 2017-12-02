@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LearnArabic</string>
+    <string name="Numbers">Numbers   ارقام</string>
+    <string name="Family">Family    العائلة</string>
+    <string name="Hobbies">Hobbies هيوايات</string>
+    <string name="Phrases">Phrases عبارات</string>
+</resources>
