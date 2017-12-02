@@ -17,7 +17,7 @@ public class HobbiesActivity extends AppCompatActivity {
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("Swimming","السباحة"));
         words.add(new Word("Running","الجري"));
-        words.add(new Word("Football","كرةالقدم"));
+        words.add(new Word("Football","كرة القدم"));
         words.add(new Word("Golf","الجولف"));
         words.add(new Word("Chess","الشطرنج"));
         words.add(new Word("Playing the Guitar","العزف على الجيتار"));
