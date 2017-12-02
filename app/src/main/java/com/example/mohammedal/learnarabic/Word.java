@@ -13,6 +13,12 @@ public class Word {
         this.arabic=Arab;
         this.translation=Eng;
     }
+    public Word(String Eng, String Arab,int imageResourceId){
+        this.arabic=Arab;
+        this.translation=Eng;
+        this.mImageResourceId = imageResourceId;
+    }
+
     public String getArabic(){
         return arabic;
     }
