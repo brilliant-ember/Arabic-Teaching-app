@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
         TextView phrases = (TextView) findViewById(R.id.phrases);
         phrases.setOnClickListener(new phrasesListner());
+
+        TextView hobbies = (TextView) findViewById(R.id.hobbies);
+        hobbies.setOnClickListener(new HobbiesListner());
+
     }
 
     public void openNumbersList(View view) {
@@ -29,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    public class HobbiesListner implements View.OnClickListener{
+        public void onClick(View view){
+            Intent i = new Intent(MainActivity.this, HobbiesActivity.class);
+            startActivity(i);
+        }
+    }
 
     public class FamilyListner implements View.OnClickListener{
         public void onClick(View view){
