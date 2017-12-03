@@ -1,8 +1,13 @@
 package com.example.mohammedal.learnarabic;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
@@ -26,8 +31,19 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add(new Word("Nine","تسعة",R.mipmap.nine));
         numbers.add(new Word("Ten","عشرة", R.mipmap.ten));
 
-        ListView numPage = (ListView) findViewById(R.id.numPage);
+        ListView numPage = findViewById(R.id.numPage);
         numPage.setAdapter(new WordsAdapter(this,numbers));
+
+        numPage.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Toast.makeText(NumbersActivity.this,"HEY",Toast.LENGTH_SHORT).show();
+                MediaPlayer mp = MediaPlayer.create(NumbersActivity.this, R.raw.d);
+                mp.start();
+
+
+            }
+        });
 
 
     }
