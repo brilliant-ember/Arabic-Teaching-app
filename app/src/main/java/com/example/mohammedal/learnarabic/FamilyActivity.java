@@ -20,6 +20,8 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("Sister","اخت"));
         words.add(new Word("Grandfather","جد"));
         words.add(new Word("Grandmother","جدة"));
+        words.add(new Word("Son","ابن"));
+        words.add(new Word("Daughter","بنت"));
 
 
 
