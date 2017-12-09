@@ -20,21 +20,21 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="#d4f4fe"/>
+        android:textColor="#ffffff"/>
 
     <TextView
         android:id="@+id/family"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#9dcf4c"
+        android:background="#ecc900"
         android:lineSpacingExtra="0sp"
         android:text="@string/Family"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="#ba5fc8"
+        android:textColor="#ffffff"
     />
 
     <TextView
@@ -49,7 +49,7 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="#23859e"/>
+        android:textColor="#ffffff"/>
 
     <TextView
         android:id="@+id/phrases"
@@ -63,6 +63,6 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="#ffb996"/>
+        android:textColor="#ffffff"/>
 
 </LinearLayout>

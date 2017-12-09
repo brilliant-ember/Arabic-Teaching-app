@@ -33,11 +33,12 @@ public class WordsAdapter extends ArrayAdapter {
         arabic.setText(theNewWord.getArabic());
         translation.setText(theNewWord.getTranslation());
 
-        if (theNewWord.getResourceId()!= 0){
+        if (theNewWord.getImageResourceId() != 0){
             ImageView img = convertView.findViewById(R.id.imageView);
-            img.setImageResource(theNewWord.getResourceId());
-
+            img.setImageResource(theNewWord.getImageResourceId());
         }
+
+
         return convertView;
 
         };
