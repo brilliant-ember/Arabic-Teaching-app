@@ -20,7 +20,7 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="#80e1ff"/>
+        android:textColor="#d4f4fe"/>
 
     <TextView
         android:id="@+id/family"

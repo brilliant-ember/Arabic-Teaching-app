@@ -38,7 +38,7 @@ public class NumbersActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Toast.makeText(NumbersActivity.this,"HEY",Toast.LENGTH_SHORT).show();
-                MediaPlayer mp = MediaPlayer.create(NumbersActivity.this, R.raw.d);
+                MediaPlayer mp = MediaPlayer.create(NumbersActivity.this, R.raw.one);
                 mp.start();
 
 
