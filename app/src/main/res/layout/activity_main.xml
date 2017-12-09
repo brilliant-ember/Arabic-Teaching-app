@@ -16,7 +16,11 @@
         android:lineSpacingExtra="0sp"
         android:onClick="openNumbersList"
         android:text="@string/Numbers"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#80e1ff"/>
 
     <TextView
         android:id="@+id/family"
@@ -26,7 +30,12 @@
         android:background="#9dcf4c"
         android:lineSpacingExtra="0sp"
         android:text="@string/Family"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ba5fc8"
+    />
 
     <TextView
         android:id="@+id/hobbies"
@@ -36,7 +45,11 @@
         android:background="#4ccf6f"
         android:lineSpacingExtra="0sp"
         android:text="@string/Hobbies"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#23859e"/>
 
     <TextView
         android:id="@+id/phrases"
@@ -46,6 +59,10 @@
         android:background="#4c94cf"
         android:lineSpacingExtra="0sp"
         android:text="@string/Phrases"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ffb996"/>
 
 </LinearLayout>
