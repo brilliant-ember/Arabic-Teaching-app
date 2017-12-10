@@ -1,6 +1,9 @@
 package com.example.mohammedal.learnarabic;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +42,18 @@ public class MainActivity extends AppCompatActivity {
     public class HobbiesListner implements View.OnClickListener{
         public void onClick(View view){
             Intent i = new Intent(MainActivity.this, HobbiesActivity.class);
+//            final ValueAnimator anime = new ValueAnimator();
+//            anime.setDuration(500);
+//            anime.setEvaluator(new ArgbEvaluator());
+//            anime.setIntValues(Color.rgb(76,207,111),Color.MAGENTA);
+//            anime.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
+//                @Override
+//                public void onAnimationUpdate(ValueAnimator animation){
+//                    TextView hobbies = findViewById(R.id.hobbies);
+//                    hobbies.setBackgroundColor( (int) anime.getAnimatedValue());
+//                }
+//            });
+//            anime.start();
             startActivity(i);
         }
     }
