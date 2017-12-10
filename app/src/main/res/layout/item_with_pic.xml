@@ -11,9 +11,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:layout_height="wrap_content"
 
-         />
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,17 +27,18 @@
             android:id="@+id/textViewA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Arabic"
-
             android:paddingRight="1dp"
-            />
+
+            android:textSize="18sp"
+            tools:text="Arabic" />
 
         <TextView
             android:id="@+id/textViewT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Translation"
-            android:paddingRight="1dp"/>
+            android:paddingRight="1dp"
+            android:textSize="18sp"
+            tools:text="Translation" />
 
     </LinearLayout>
 

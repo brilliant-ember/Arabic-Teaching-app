@@ -6,13 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mohammedal.learnarabic.MainActivity">
+    <TextView
+        android:id="@+id/colloquial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/Colloquial"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
 
     <TextView
         android:id="@+id/numbers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/colorAccent"
+        android:background="#874ccf"
         android:lineSpacingExtra="0sp"
         android:onClick="openNumbersList"
         android:text="@string/Numbers"
@@ -64,5 +77,7 @@
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="#ffffff"/>
+
+
 
 </LinearLayout>

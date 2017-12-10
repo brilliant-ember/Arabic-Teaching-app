@@ -19,7 +19,8 @@
         <activity android:name=".NumbersActivity" />
         <activity android:name=".HobbiesActivity" />
         <activity android:name=".PhrasesActivity" />
-        <activity android:name=".FamilyActivity"></activity>
+        <activity android:name=".FamilyActivity" />
+        <activity android:name=".ColloquialActivity"></activity>
     </application>
 
 </manifest>

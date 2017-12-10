@@ -17,11 +17,14 @@ public class MainActivity extends AppCompatActivity {
         TextView family = (TextView) findViewById(R.id.family);
         family.setOnClickListener(famL);
 
-        TextView phrases = (TextView) findViewById(R.id.phrases);
+        TextView phrases = findViewById(R.id.phrases);
         phrases.setOnClickListener(new phrasesListner());
 
-        TextView hobbies = (TextView) findViewById(R.id.hobbies);
+        TextView hobbies = findViewById(R.id.hobbies);
         hobbies.setOnClickListener(new HobbiesListner());
+
+        TextView colloquial = findViewById(R.id.colloquial);
+        colloquial.setOnClickListener(new colloquialListner());
 
     }
 
@@ -52,6 +55,13 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view){
             Intent i = new Intent(MainActivity.this, PhrasesActivity.class);
             startActivity(i);
+        }
+    }
+
+    public class colloquialListner implements View.OnClickListener{
+        public void onClick (View v){
+            Intent ein = new Intent(MainActivity.this, ColloquialActivity.class);
+            startActivity(ein);
         }
     }
 
