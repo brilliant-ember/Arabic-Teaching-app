@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public class ColloquialActivity extends AppCompatActivity {
 
+    //This is the Slang activity, named colloquial for fancy reasons.
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
