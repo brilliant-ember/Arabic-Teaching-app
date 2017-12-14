@@ -38,8 +38,9 @@ public class NumbersActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word current = numbers.get(position);
                 //Toast.makeText(NumbersActivity.this,"HEY",Toast.LENGTH_SHORT).show();
+                if (current.getAudioResourceId() != 0){
                 MediaPlayer mp = MediaPlayer.create(NumbersActivity.this, current.getAudioResourceId());
-                mp.start();
+                mp.start();}
 
 
             }
