@@ -37,6 +37,9 @@ public class PhrasesActivity extends AppCompatActivity {
 
 
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً"));
+        phrases.add(new Word("Leave me alone","اتركني و شائني"));
+        phrases.add(new Word("I will blow up your head","سافجر رأسك"));
+
 
 
 
