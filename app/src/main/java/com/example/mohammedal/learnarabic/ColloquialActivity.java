@@ -49,8 +49,9 @@ public class ColloquialActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word current = phrases.get(position);
+                if (current.getAudioResourceId() != 0){
                 MediaPlayer mp = MediaPlayer.create(ColloquialActivity.this, current.getAudioResourceId());
-                mp.start();
+                mp.start();}
 
 
             }
