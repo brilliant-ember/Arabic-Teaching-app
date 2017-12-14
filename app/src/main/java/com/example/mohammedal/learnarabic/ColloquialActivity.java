@@ -36,7 +36,7 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Lebanese for: What is this thing","شو هيدا الشي", R.raw.lebshuhyda));
         phrases.add(new Word("Lebanese for: May your house get destroyed how much I loved you","يخرب بيتك شو حبيتك", R.raw.lebyhrebbytak));
         phrases.add(new Word("Lebanese for: You came at the perfect time","جيت والله جابك", R.raw.lebjeetwaallahjabak));
-        phrases.add(new Word("Lebanese for: What's up babe","شو حياتي", R.raw.lebyhrebbytak));
+        phrases.add(new Word("Lebanese for: What's up babe","شو حياتي", R.raw.extra));
         phrases.add(new Word("Lebanese for: You are my babe","حبيبي انتا", R.raw.lebyouaremybabe));
 
 
