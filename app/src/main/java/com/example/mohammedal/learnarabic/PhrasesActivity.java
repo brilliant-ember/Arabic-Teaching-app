@@ -18,6 +18,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("Come on","يلا!"));
         phrases.add(new Word("Formal hello","السلام عليكم ورحمة الله و بركاتةً"));
         phrases.add(new Word("How are you?","كيفك؟"));
+        phrases.add(new Word("My name is Mohammed","اسمي محمدً"));
 
         phrases.add(new Word("How much does this cost?","بكم هاذي؟ً"));
         phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ"));
@@ -32,7 +33,12 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("What is your name asking a woman","ما هو اسمكي؟ً"));
         phrases.add(new Word("How are you feeling, asking a man","كيف تشعر؟ً"));
         phrases.add(new Word("How are you feeling, asking a woman","كيف تشعرين؟ً"));
-        phrases.add(new Word("My name is Mohammed","اسمي محمدً"));
+        phrases.add(new Word("Good luck","حظاً طيباًَ"));
+
+
+        phrases.add(new Word("Go to hell","اذهب الى الجحيمً"));
+
+
 
 
         ListView root = findViewById(R.id.phrasesRoot);
