@@ -29,7 +29,7 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Egyption for: How old are you?","عندك كم سنة؟ ", R.raw.egyhowoldareyou));
         phrases.add(new Word("Egyption for: ٌٌRoom","أوضة ",R.raw.egyroom));
         phrases.add(new Word("Egyption for: Barely","بالـزور ",R.raw.egybilzoor));
-        phrases.add(new Word("Sham region for: Straightly","دُغرِي "));
+        phrases.add(new Word("Sham region for: What do you want?","شو بدك؟ "));
         phrases.add(new Word("Sham region for: What?","شو؟ "));
         phrases.add(new Word("Sham region for: Money","مصاري"));
         phrases.add(new Word("Sham region for: I want this","بدي هاد "));
