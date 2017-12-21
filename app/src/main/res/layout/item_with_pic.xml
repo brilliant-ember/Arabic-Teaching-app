@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:paddingRight="1dp"
             android:textSize="18sp"
+            tools:text="ُEnglish"
              />
 
     </LinearLayout>
