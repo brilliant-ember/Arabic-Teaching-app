@@ -22,8 +22,8 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("Grandmother","جدة"));
         words.add(new Word("Son","ابن"));
         words.add(new Word("Daughter","بنت"));
-        words.add(new Word("Wife","بنت"));
-        words.add(new Word("Husband","بنت"));
+        words.add(new Word("Wife","زوجة"));
+        words.add(new Word("Husband","زوج"));
 
 
         ListView root = (ListView) findViewById(R.id.familyRoot);
