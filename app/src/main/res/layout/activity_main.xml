@@ -50,20 +50,20 @@
         android:textColor="#ffffff"
     />
 
-    <TextView
-        android:id="@+id/hobbies"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/gradiant"
+    <!--<TextView-->
+        <!--android:id="@+id/hobbies"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/gradiant"-->
 
-        android:lineSpacingExtra="0sp"
-        android:text="@string/Hobbies"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#ffffff"/>
+        <!--android:lineSpacingExtra="0sp"-->
+        <!--android:text="@string/Hobbies"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAppearance="@android:style/TextAppearance.Large"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#ffffff"/>-->
 
     <TextView
         android:id="@+id/phrases"
