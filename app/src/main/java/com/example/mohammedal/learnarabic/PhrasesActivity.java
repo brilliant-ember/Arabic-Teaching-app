@@ -18,9 +18,9 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("Come on","يلا!"));
         phrases.add(new Word("Formal hello","السلام عليكم ورحمة الله و بركاتةً"));
         phrases.add(new Word("How are you?","كيفك؟"));
-        phrases.add(new Word("My name is Mohammed","اسمي محمدً"));
-        phrases.add(new Word("I am sorry","انا اسف ً"));
-        phrases.add(new Word(".","--ً"));
+        phrases.add(new Word("My name is Mohammed","اسمي محمد"));
+        phrases.add(new Word("I am sorry","انا اسف"));
+        phrases.add(new Word("---        .       ---","ً"));
 
         phrases.add(new Word("How much does this cost?","بكم هاذي؟ً"));
         phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ"));
@@ -37,7 +37,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("How are you feeling, asking a woman","كيف تشعرين؟ً"));
         phrases.add(new Word("Good luck","حظاً طيباًَ"));
         phrases.add(new Word("How can I get to the hotel?","كيف اصل الى الفندق؟ً"));
-        phrases.add(new Word("_","_ً"));
+        phrases.add(new Word("---        .       ---","ً"));
 
 
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً"));
