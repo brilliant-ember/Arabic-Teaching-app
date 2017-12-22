@@ -22,6 +22,9 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Yemeni for: I want this","اشتي هذا",R.mipmap.yem, R.raw.yashtihada));
         phrases.add(new Word("Yemeni for: Hurry up!","فيسع!",R.mipmap.yem, R.raw.yfisaa));
         phrases.add(new Word("Yemeni for: To strike or to hit","يندف",R.mipmap.yem, R.raw.yeindouf));
+        phrases.add(new Word("Yemeni for: Leave me aloneً","ماعليك مني",R.mipmap.yem, R.raw.yeindouf));
+        phrases.add(new Word("Yemeni for: Go away","روح لك",R.mipmap.yem, R.raw.yeindouf));
+
 
         phrases.add(new Word("Palestinian for: Spider web","شعشبون"));
         phrases.add(new Word("Palestinian for: Scooch over","ليز شوي"));
