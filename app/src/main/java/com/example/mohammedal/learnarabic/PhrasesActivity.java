@@ -1,7 +1,10 @@
 package com.example.mohammedal.learnarabic;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -13,7 +16,7 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
 
-        ArrayList<Word> phrases = new ArrayList<>();
+        final ArrayList<Word> phrases = new ArrayList<>();
         phrases.add(new Word("Hello","مرحباً"));
         phrases.add(new Word("Come on","اهلاً و سهلاً"));
         phrases.add(new Word("Come on","تفضل"));
@@ -64,6 +67,19 @@ public class PhrasesActivity extends AppCompatActivity {
 
         ListView root = findViewById(R.id.phrasesRoot);
         root.setAdapter(new WordsAdapter(this, phrases));
+
+
+        root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Word current = phrases.get(position);
+                if (current.getAudioResourceId() != 0){
+                    MediaPlayer mp = MediaPlayer.create(PhrasesActivity.this, current.getAudioResourceId());
+                    mp.start();}
+
+
+            }
+        });
 
     }
 }
