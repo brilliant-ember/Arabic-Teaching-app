@@ -18,11 +18,18 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("Come on","اهلاً و سهلاً"));
         phrases.add(new Word("Come on","تفضل"));
 
-        phrases.add(new Word("Formal hello","السلام عليكم ورحمة الله و بركاتةً"));
-        phrases.add(new Word("How are you?","كيف حالك؟"));
-        phrases.add(new Word("How are you?","ما هو اسمك؟"));
-        phrases.add(new Word("My name is Mohammed","اسمي محمد"));
-        phrases.add(new Word("I am sorry","انا اسف"));
+        phrases.add(new Word("Formal hello","السلام عليكم",R.raw.asalamalikum));
+        phrases.add(new Word("How are you? (asking a man)","كيف حالك؟",R.raw.howrumasculine));
+        phrases.add(new Word("How are you? (asking a woman)","كيف حالك؟",R.raw.howrufeminine));
+        phrases.add(new Word("What is your name? (asking a woman)","ما هو اسمك؟",R.raw.whatisurnamefeminine));
+        phrases.add(new Word("What is your name? (asking a man)","ما هو اسمك؟",R.raw.whatisurnamemasculine));
+        phrases.add(new Word("My name is Mohammed","اسمي محمد",R.raw.mynameismohammed));
+        phrases.add(new Word("What time is it?","كم الساعة؟",R.raw.whattimeisit));
+        phrases.add(new Word("It is eight in the morning","الساعة الثامنة صباحاً",R.raw.itiseightmorning));
+
+        phrases.add(new Word("I am sorry masculine","انا اسف",R.raw.iamsorrym));
+        phrases.add(new Word("I am sorry feminine","انا اسفة",R.raw.iamsorryfem));
+
         phrases.add(new Word("---        .       ---","ً"));
 
         phrases.add(new Word("How do I go to the market?",";كيف اصل الى السوق؟ً"));
@@ -34,15 +41,13 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("Where is the exit?","اين المخرج؟ً"));
 
 
-        phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ"));
-        phrases.add(new Word("What is the time?","كم الساعة؟ً"));
+        phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ",R.raw.thanks));
         phrases.add(new Word("I am thirsty masculine form","انا عطشانً"));
         phrases.add(new Word("I am thirsty feminine form","انا عطشانةً"));
         phrases.add(new Word("I want to go to the bathroom","اريد الذهاب إًلى الحمام"));
         phrases.add(new Word("Can you help me?","ايمكنكَ مساعدتي؟ً"));
         phrases.add(new Word("Please","من فضلكً"));
         phrases.add(new Word("Let's go!","هيا بنا!"));
-        phrases.add(new Word("What is your name?","ما هو اسمك؟ً"));
         phrases.add(new Word("How are you feeling, asking a man","كيف تشعر؟ً"));
         phrases.add(new Word("Good luck","حظاً طيباًَ"));
         phrases.add(new Word("------        .       ------","ً"));
