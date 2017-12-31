@@ -51,9 +51,11 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("I am thirsty feminine form","انا عطشانةً",R.raw.thirstywoman));
         phrases.add(new Word("I want to go to the bathroom","اريد الذهاب إًلى الحمام",R.raw.bathroom));
         phrases.add(new Word("Can you help me?","هل يمكنكَ مساعدتي؟ً",R.raw.canuhelpme));
-        phrases.add(new Word("Please","من فضلكً"));
-        phrases.add(new Word("Let's go!","هيا بنا!"));
-        phrases.add(new Word("How are you feeling, asking a man","كيف تشعر؟ً"));
+        phrases.add(new Word("Please","من فضلكً",R.raw.please));
+        phrases.add(new Word("Let's go!","هيا بنا!",R.raw.letsgo));
+        phrases.add(new Word("How are you feeling, asking a man","كيف تشعر؟ً",R.raw.howfeelman));
+        phrases.add(new Word("How are you feeling, asking a woman","كيف تشعرين؟ً",R.raw.howfeelwoman));
+
         phrases.add(new Word("Good luck","حظاً طيباًَ"));
         phrases.add(new Word("------        .       ------","ً"));
 
