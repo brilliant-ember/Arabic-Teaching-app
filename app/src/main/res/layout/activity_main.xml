@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/grad4"
+        android:background="@drawable/gradiant"
         android:lineSpacingExtra="0sp"
         android:text="@string/Colloquial"
         android:textAlignment="center"
@@ -21,14 +21,13 @@
         android:textColor="#ffffff"/>
 
     <TextView
-        android:id="@+id/numbers"
+        android:id="@+id/phrases"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/grad3"
+        android:background="@drawable/grad5"
         android:lineSpacingExtra="0sp"
-        android:onClick="openNumbersList"
-        android:text="@string/Numbers"
+        android:text="@string/Phrases"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textStyle="bold"
@@ -48,7 +47,24 @@
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="#ffffff"
-    />
+        />
+
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/grad3"
+        android:lineSpacingExtra="0sp"
+        android:onClick="openNumbersList"
+        android:text="@string/Numbers"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+
 
     <!--<TextView-->
         <!--android:id="@+id/hobbies"-->
@@ -65,19 +81,7 @@
         <!--android:gravity="center"-->
         <!--android:textColor="#ffffff"/>-->
 
-    <TextView
-        android:id="@+id/phrases"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/grad5"
-        android:lineSpacingExtra="0sp"
-        android:text="@string/Phrases"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#ffffff"/>
+
 
 
 
