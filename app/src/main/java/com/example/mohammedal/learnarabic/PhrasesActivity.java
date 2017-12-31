@@ -35,11 +35,13 @@ public class PhrasesActivity extends AppCompatActivity {
 
         phrases.add(new Word("---        .       ---","ً"));
 
-        phrases.add(new Word("How do I go to the market?",";كيف اصل الى السوق؟ً"));
+        phrases.add(new Word("How do I go to the market?",";كيف اصل الى السوق؟ً",R.raw.market));
         phrases.add(new Word("How much does this cost?","بكم هاذي؟ً"));
-        phrases.add(new Word("How do I go to the restaurant?","كيف اصل الى المطعم؟ً"));
-        phrases.add(new Word("How can I get to the hotel?","كيف اصل الى الفندق؟ً"));
+        phrases.add(new Word("How do I go to the restaurant?","كيف اصل الى المطعم؟ً",R.raw.resturant));
+        phrases.add(new Word("How can I get to the hotel?","كيف اصل الى الفندق؟ً",R.raw.hotel));
         phrases.add(new Word("How can I get to the hotel?","كيف اصل الى المستشفى؟ً"));
+        phrases.add(new Word("How can I get to the hotel?","كيف اصل الى المطار؟ً",R.raw.airport));
+
 
         phrases.add(new Word("Where is the exit?","اين المخرج؟ً"));
 
@@ -59,7 +61,6 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً"));
         phrases.add(new Word("Leave me alone","اتركني و شائني"));
         phrases.add(new Word("I will call the police!","ساتصل بالشرطة!"));
-        phrases.add(new Word("I will blow up your head","سافجر رأسك"));
 
 
 
