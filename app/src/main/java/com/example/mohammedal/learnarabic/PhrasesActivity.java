@@ -17,8 +17,8 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_phrases);
 
         final ArrayList<Word> phrases = new ArrayList<>();
-        phrases.add(new Word("Hello","مرحباً"));
-        phrases.add(new Word("Come on","اهلاً و سهلاً"));
+        phrases.add(new Word("Hello","مرحباً",R.raw.marhaba));
+        phrases.add(new Word("Come on","اهلاً و سهلاً",R.raw.ahlawasahla));
         phrases.add(new Word("Come on","تفضل"));
 
         phrases.add(new Word("Formal hello","السلام عليكم",R.raw.asalamalikum));
@@ -47,17 +47,17 @@ public class PhrasesActivity extends AppCompatActivity {
 
 
         phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ",R.raw.thanks));
-        phrases.add(new Word("I am thirsty masculine form","انا عطشانً"));
-        phrases.add(new Word("I am thirsty feminine form","انا عطشانةً"));
-        phrases.add(new Word("I want to go to the bathroom","اريد الذهاب إًلى الحمام"));
-        phrases.add(new Word("Can you help me?","ايمكنكَ مساعدتي؟ً"));
+        phrases.add(new Word("I am thirsty masculine form","انا عطشانً",R.raw.thirstyman));
+        phrases.add(new Word("I am thirsty feminine form","انا عطشانةً",R.raw.thirstywoman));
+        phrases.add(new Word("I want to go to the bathroom","اريد الذهاب إًلى الحمام",R.raw.bathroom));
+        phrases.add(new Word("Can you help me?","هل يمكنكَ مساعدتي؟ً",R.raw.canuhelpme));
         phrases.add(new Word("Please","من فضلكً"));
         phrases.add(new Word("Let's go!","هيا بنا!"));
         phrases.add(new Word("How are you feeling, asking a man","كيف تشعر؟ً"));
         phrases.add(new Word("Good luck","حظاً طيباًَ"));
         phrases.add(new Word("------        .       ------","ً"));
 
-
+        phrases.add(new Word("Oh my god!","يااللهي!"));
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً"));
         phrases.add(new Word("Leave me alone","اتركني و شائني"));
         phrases.add(new Word("I will call the police!","ساتصل بالشرطة!"));
