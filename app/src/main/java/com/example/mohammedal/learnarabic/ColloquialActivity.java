@@ -63,11 +63,13 @@ public class ColloquialActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                adapter.getFilter().filter(s);
 
             }
 
             @Override
             public void afterTextChanged(Editable s) {
+                adapter.getFilter().filter(s);
 
             }
         });
@@ -76,7 +78,7 @@ public class ColloquialActivity extends AppCompatActivity {
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Word current = phrases.get(position);
+                Word current = (Word) adapter.getItem(position);
                 if (current.getAudioResourceId() != 0){
                 MediaPlayer mp = MediaPlayer.create(ColloquialActivity.this, current.getAudioResourceId());
                 mp.start();}

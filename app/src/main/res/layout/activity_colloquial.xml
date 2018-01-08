@@ -20,12 +20,11 @@
     android:id="@+id/colloquialRoot"
 
     android:layout_width="match_parent"
-    
+
     android:background="@drawable/grad_inside"
     android:layout_height="match_parent"
     tools:context="com.example.mohammedal.learnarabic.ColloquialActivity">
 
 
-
-</ListView>
+    </ListView>
 </LinearLayout>

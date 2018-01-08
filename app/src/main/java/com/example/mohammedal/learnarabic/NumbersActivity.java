@@ -3,10 +3,12 @@ package com.example.mohammedal.learnarabic;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,12 +33,32 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add(new Word("Ten","عشرة", R.mipmap.ten, R.raw.ten));
 
         ListView numPage = findViewById(R.id.numPage);
-        numPage.setAdapter(new WordsAdapter(this,numbers));
+        final WordsAdapter adapter = new WordsAdapter(this,numbers);
+        numPage.setAdapter(adapter);
+
+        EditText editText = findViewById(R.id.numSearch);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                adapter.getFilter().filter(s);
+            }
+        });
+
 
         numPage.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Word current = numbers.get(position);
+                Word current = (Word)adapter.getItem(position);
                 //Toast.makeText(NumbersActivity.this,"HEY",Toast.LENGTH_SHORT).show();
                 if (current.getAudioResourceId() != 0){
                 MediaPlayer mp = MediaPlayer.create(NumbersActivity.this, current.getAudioResourceId());

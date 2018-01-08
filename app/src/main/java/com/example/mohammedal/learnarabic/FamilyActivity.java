@@ -42,11 +42,12 @@ public class FamilyActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                adapter.getFilter().filter(s);
             }
 
             @Override
             public void afterTextChanged(Editable s) {
+                adapter.getFilter().filter(s);
 
             }
         });
