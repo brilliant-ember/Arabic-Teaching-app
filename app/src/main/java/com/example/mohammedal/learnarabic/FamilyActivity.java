@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -15,6 +16,8 @@ public class FamilyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
+        // this line to make sure the focus isn't at the editText whrn the activity starts
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("Dad","اب"));

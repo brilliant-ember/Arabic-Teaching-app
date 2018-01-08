@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -20,6 +21,9 @@ public class ColloquialActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colloquial);
+        // this line to make sure the focus isn't at the editText whrn the activity starts
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
 
         final ArrayList<Word> phrases = new ArrayList<Word>();
         phrases.add(new Word("Yemeni for: I want this","اشتي هذا",R.mipmap.yem, R.raw.yashtihada));
@@ -50,11 +54,11 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Lebanese for: You are my babe","حبيبي انتا", R.mipmap.leb,R.raw.lebyouaremybabe));
 
 
-
+        EditText editText = findViewById(R.id.colSearch);
         ListView root = findViewById(R.id.colloquialRoot);
         final WordsAdapter adapter = new WordsAdapter(this, phrases);
         root.setAdapter(adapter);
-        EditText editText = findViewById(R.id.colSearch);
+
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

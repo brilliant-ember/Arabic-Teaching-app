@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -15,6 +16,8 @@ public class PhrasesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
+        // this line to make sure the focus isn't at the editText whrn the activity starts
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         final ArrayList<Word> phrases = new ArrayList<>();
         phrases.add(new Word("Hello","مرحباً",R.raw.marhaba));
@@ -65,17 +68,15 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("I will call the police!","ساتصل بالشرطة!"));
 
 
-
-
-
         ListView root = findViewById(R.id.phrasesRoot);
-        root.setAdapter(new WordsAdapter(this, phrases));
+        final WordsAdapter adapter = new WordsAdapter(this, phrases);
+        root.setAdapter(adapter);
 
 
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Word current = phrases.get(position);
+                Word current = (Word) adapter.getItem(position);
                 if (current.getAudioResourceId() != 0){
                     MediaPlayer mp = MediaPlayer.create(PhrasesActivity.this, current.getAudioResourceId());
                     mp.start();}
