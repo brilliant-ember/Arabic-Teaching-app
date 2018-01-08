@@ -3,8 +3,11 @@ package com.example.mohammedal.learnarabic;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -49,7 +52,25 @@ public class ColloquialActivity extends AppCompatActivity {
 
 
         ListView root = findViewById(R.id.colloquialRoot);
-        root.setAdapter(new WordsAdapter(this, phrases));
+        final WordsAdapter adapter = new WordsAdapter(this, phrases);
+        root.setAdapter(adapter);
+        EditText editText = findViewById(R.id.colSearch);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
 
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
