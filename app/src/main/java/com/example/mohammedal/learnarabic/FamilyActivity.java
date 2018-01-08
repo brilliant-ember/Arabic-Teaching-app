@@ -2,6 +2,9 @@ package com.example.mohammedal.learnarabic;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -27,7 +30,26 @@ public class FamilyActivity extends AppCompatActivity {
 
 
         ListView root = (ListView) findViewById(R.id.familyRoot);
-        root.setAdapter(new WordsAdapter(this, words));
+        final WordsAdapter adapter = new WordsAdapter(this, words);
+        root.setAdapter(adapter);
+
+        EditText editText = findViewById(R.id.famSearch);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
     }
 }

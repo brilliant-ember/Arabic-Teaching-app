@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView
-    android:id="@+id/familyRoot"
+
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:paddingTop="16dp"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/famSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search"
+        android:drawableRight="@drawable/search_lens"/>
+
+    <ListView
+    android:id="@+id/familyRoot"
+
+    android:layout_width="match_parent"
+
     android:background="@drawable/grad_inside"
     android:layout_height="match_parent"
     tools:context="com.example.mohammedal.learnarabic.FamilyActivity">
 
+
 </ListView>
+</LinearLayout>
