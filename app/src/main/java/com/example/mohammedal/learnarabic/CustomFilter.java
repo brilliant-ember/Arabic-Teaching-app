@@ -31,7 +31,7 @@ public class CustomFilter extends Filter{
             ArrayList<Word>filteredWords = new ArrayList<>();
 
             for(int i=0; i<filterList.size(); i++){
-                if (filterList.get(i).getTranslation().toLowerCase().contains(constraint)){
+                if (filterList.get(i).getTranslation().toLowerCase().contains(constraint) || filterList.get(i).getArabic().toLowerCase().contains(constraint)){
                     filteredWords.add(filterList.get(i));
                 }
             }
