@@ -3,10 +3,16 @@ package com.example.mohammedal.learnarabic;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 
@@ -18,6 +24,12 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_phrases);
         // this line to make sure the focus isn't at the editText whrn the activity starts
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        AdView adView = findViewById(R.id.adViewPhrases);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+
+        adView.loadAd(adRequest);
 
         final ArrayList<Word> phrases = new ArrayList<>();
         phrases.add(new Word("Hello","مرحباً",R.raw.marhaba));
@@ -71,6 +83,24 @@ public class PhrasesActivity extends AppCompatActivity {
         ListView root = findViewById(R.id.phrasesRoot);
         final WordsAdapter adapter = new WordsAdapter(this, phrases);
         root.setAdapter(adapter);
+
+        EditText editText = findViewById(R.id.phrSearch);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                adapter.getFilter().filter(s);
+            }
+        });
 
 
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {

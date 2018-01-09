@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads = "http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mohammedal.learnarabic.MainActivity">
+    tools:context="com.example.mohammedal.learnarabic.MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
     <TextView
         android:id="@+id/colloquial"
         android:layout_width="match_parent"
@@ -66,7 +77,7 @@
         android:textColor="#ffffff"/>
 
 
-    <!--<TextView-->
+        <!--<TextView-->
         <!--android:id="@+id/hobbies"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
@@ -85,4 +96,15 @@
 
 
 
+</LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+
+        android:id="@+id/adViewMain"
+        android:paddingTop="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 </LinearLayout>

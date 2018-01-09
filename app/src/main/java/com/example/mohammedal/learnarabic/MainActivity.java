@@ -1,13 +1,15 @@
 package com.example.mohammedal.learnarabic;
 
-import android.animation.ArgbEvaluator;
-import android.animation.ValueAnimator;
+
+import com.google.android.gms.ads.MobileAds;
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
         TextView colloquial = findViewById(R.id.colloquial);
         colloquial.setOnClickListener(new colloquialListner());
+        MobileAds.initialize(this, "ca-app-pub-7772027303156049~2054364655");
+        AdView adView = findViewById(R.id.adViewMain);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+
+        adView.loadAd(adRequest);
 
     }
 
@@ -35,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),NumbersActivity.class);
         startActivity(i);
     }
+
+
 
 
 
