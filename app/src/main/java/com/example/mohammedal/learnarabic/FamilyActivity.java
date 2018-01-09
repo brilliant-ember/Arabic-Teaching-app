@@ -8,6 +8,9 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
@@ -36,12 +39,20 @@ public class FamilyActivity extends AppCompatActivity {
         final WordsAdapter adapter = new WordsAdapter(this, words);
         root.setAdapter(adapter);
 
+        AdView adView = findViewById(R.id.adViewFamily);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+
+        adView.loadAd(adRequest);
+
         EditText editText = findViewById(R.id.famSearch);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 adapter.getFilter().filter(s);
             }
+
+
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {

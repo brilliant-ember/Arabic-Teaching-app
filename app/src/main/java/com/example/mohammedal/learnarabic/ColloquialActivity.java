@@ -11,6 +11,9 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class ColloquialActivity extends AppCompatActivity {
@@ -77,7 +80,11 @@ public class ColloquialActivity extends AppCompatActivity {
 
             }
         });
+        AdView adView = findViewById(R.id.adViewColloquial);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
 
+        adView.loadAd(adRequest);
 
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

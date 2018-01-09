@@ -11,6 +11,9 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
@@ -57,6 +60,11 @@ public class NumbersActivity extends AppCompatActivity {
             }
         });
 
+        AdView adView = findViewById(R.id.adViewNumbers);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+
+        adView.loadAd(adRequest);
 
         numPage.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
