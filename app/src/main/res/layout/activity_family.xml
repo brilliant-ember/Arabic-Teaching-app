@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
 
     android:orientation="vertical">
 
@@ -19,13 +19,19 @@
 
     <ListView
     android:id="@+id/familyRoot"
-
     android:layout_width="match_parent"
-
+    android:layout_weight="1"
     android:background="@drawable/grad_inside"
     android:layout_height="match_parent"
     tools:context="com.example.mohammedal.learnarabic.FamilyActivity">
-
-
 </ListView>
+    <com.google.android.gms.ads.AdView
+
+        android:id="@+id/adViewFamily"
+        android:layout_marginTop="1dp"
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7772027303156049/7269842948" />
 </LinearLayout>

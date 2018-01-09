@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.mohammedal.learnarabic.NumbersActivity">
@@ -22,5 +22,15 @@
         android:id="@+id/numPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/grad_inside"        />
+        android:background="@drawable/grad_inside"
+        android:layout_weight="1"/>
+    <com.google.android.gms.ads.AdView
+
+        android:id="@+id/adViewNumbers"
+        android:layout_marginTop="1dp"
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7772027303156049/2592231332" />
 </LinearLayout>
