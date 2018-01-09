@@ -56,6 +56,12 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Lebanese for: What's up babe","شو حياتي", R.mipmap.leb,R.raw.extra));
         phrases.add(new Word("Lebanese for: You are my babe","حبيبي انتا", R.mipmap.leb,R.raw.lebyouaremybabe));
 
+        phrases.add(new Word("Libyan for: What's up?","شنو الجو", R.mipmap.leb,R.raw.lebyouaremybabe));
+        phrases.add(new Word("Libyan for: Where have you been?","وينك مغيب", R.mipmap.leb,R.raw.lebyouaremybabe));
+        phrases.add(new Word("Libyan for: Why?","علاش", R.mipmap.leb,R.raw.lebyouaremybabe));
+        phrases.add(new Word("Libyan for: I miss you","ستحشتك", R.mipmap.leb,R.raw.lebyouaremybabe));
+
+
 
         EditText editText = findViewById(R.id.colSearch);
         ListView root = findViewById(R.id.colloquialRoot);
