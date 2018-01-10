@@ -61,7 +61,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("How can I get to the airport?","كيف اصل الى المطار؟ً",R.raw.airport, R.mipmap.airplane));
 
 
-        phrases.add(new Word("Where is the exit?","اين المخرج؟ً"));
+        phrases.add(new Word("Where is the exit?","اين المخرج؟ً",R.raw.where_exit, R.mipmap.exit));
 
 
         phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ",R.raw.thanks));
@@ -74,15 +74,15 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("How are you feeling, asking a man","كيف تشعر؟ً",R.raw.howfeelman));
         phrases.add(new Word("How are you feeling, asking a woman","كيف تشعرين؟ً",R.raw.howfeelwoman));
 
-        phrases.add(new Word("Good luck","حظاً طيباًَ"));
+        phrases.add(new Word("Good luck","حظاً طيباًَ",R.raw.goodluck));
         phrases.add(new Word("------        .       ------","ً"));
 
-        phrases.add(new Word("Oh my god!","يااللهي!"));
+        phrases.add(new Word("Oh my god!","يااللهي!", R.raw.oh_my_god));
         phrases.add(new Word("Call an ambulance","اتصل بالاسعاف",R.raw.call_ambulance, R.mipmap.hospital_symbol));
 
-        phrases.add(new Word("Go to hell","اذهب الى الجحيمً"));
-        phrases.add(new Word("Leave me alone","اتركني و شائني"));
-        phrases.add(new Word("I will call the police!","ساتصل بالشرطة!"));
+        phrases.add(new Word("Go to hell","اذهب الى الجحيمً", R.raw.go_to_hell));
+        phrases.add(new Word("Leave me alone","اتركني و شائني", R.raw.leave_me_alone));
+        phrases.add(new Word("I will call the police!","ساتصل بالشرطة!",R.raw.police));
 
 
         ListView root = findViewById(R.id.phrasesRoot);
