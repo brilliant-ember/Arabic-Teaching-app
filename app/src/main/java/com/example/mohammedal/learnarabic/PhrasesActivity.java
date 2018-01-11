@@ -18,6 +18,8 @@ import java.util.ArrayList;
 
 public class PhrasesActivity extends AppCompatActivity {
 
+    private MediaPlayer.OnCompletionListener isDone = new MediaPlayer.OnCompletionListener() {public void onCompletion(MediaPlayer mp) {}};
+    private MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +52,7 @@ public class PhrasesActivity extends AppCompatActivity {
 
         phrases.add(new Word("---        .       ---","ً"));
 
-        phrases.add(new Word("How do I go to the market?",";كيف اصل الى السوق؟ً",R.raw.market,R.mipmap.shopping));
+        phrases.add(new Word("How do I go to the market?","كيف اصل الى السوق؟ً",R.raw.market,R.mipmap.shopping));
 //        phrases.add(new Word("What are good places to visit?",";كيف اصل الى السوق؟ً"));
 
         phrases.add(new Word("How much does this cost?","بكم هذا؟ً", R.raw.how_much));
@@ -77,7 +79,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("------        .       ------","ً"));
 
         phrases.add(new Word("Oh my god!","يااللهي!", R.raw.oh_my_god));
-        phrases.add(new Word("Call an ambulance","اتصل بالاسعاف",R.raw.call_ambulance, R.mipmap.hospital_symbol));
+        phrases.add(new Word("Call an ambulance","اتصل بالاسعاف",R.raw.amb, R.mipmap.hospital_symbol));
 
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً", R.raw.go_to_hell));
         phrases.add(new Word("Leave me alone","اتركني و شائني", R.raw.leave_me_alone));
@@ -111,13 +113,31 @@ public class PhrasesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word current = (Word) adapter.getItem(position);
+                releaseMediaPlayer();
                 if (current.getAudioResourceId() != 0){
-                    MediaPlayer mp = MediaPlayer.create(PhrasesActivity.this, current.getAudioResourceId());
-                    mp.start();}
+                     mp = MediaPlayer.create(PhrasesActivity.this, current.getAudioResourceId());
+
+                    mp.start();
+                // detects when playing is done so I can stop and release
+                mp.setOnCompletionListener(isDone);}
 
 
             }
         });
 
     }
+    /**
+     * Clean up the media player by releasing its resources.
+     */
+    private void releaseMediaPlayer() {
+        if (mp != null) {
+
+            mp.release();
+
+
+            mp = null;
+        }
+    }
+
+
 }

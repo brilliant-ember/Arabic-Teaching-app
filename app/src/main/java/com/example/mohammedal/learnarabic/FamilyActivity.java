@@ -1,10 +1,13 @@
 package com.example.mohammedal.learnarabic;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -62,6 +65,19 @@ public class FamilyActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 adapter.getFilter().filter(s);
+
+            }
+        });
+
+        root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Word current = (Word)adapter.getItem(position);
+                //Toast.makeText(NumbersActivity.this,"HEY",Toast.LENGTH_SHORT).show();
+                if (current.getAudioResourceId() != 0){
+                    MediaPlayer mp = MediaPlayer.create(FamilyActivity.this, current.getAudioResourceId());
+                    mp.start();}
+
 
             }
         });

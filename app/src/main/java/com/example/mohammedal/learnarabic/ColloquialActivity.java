@@ -32,23 +32,23 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Yemeni for: I want this","اشتي هذا",R.mipmap.yem, R.raw.yashtihada));
         phrases.add(new Word("Yemeni for: Hurry up!","فيسع!",R.mipmap.yem, R.raw.yfisaa));
         phrases.add(new Word("Yemeni for: To strike or to hit","يندف",R.mipmap.yem, R.raw.yeindouf));
-        phrases.add(new Word("Yemeni for: Leave me aloneً","ماعليك مني",R.mipmap.yem, R.raw.yeindouf));
-        phrases.add(new Word("Yemeni for: Go away","روح لك",R.mipmap.yem, R.raw.yeindouf));
+//        phrases.add(new Word("Yemeni for: Leave me aloneً","ماعليك مني",R.mipmap.yem, R.raw.yeindouf));
+//        phrases.add(new Word("Yemeni for: Go away","روح لك",R.mipmap.yem, R.raw.yeindouf));
 
 
-        phrases.add(new Word("Palestinian for: Spider web","شعشبون"));
-        phrases.add(new Word("Palestinian for: Scooch over","ليز شوي"));
-        phrases.add(new Word("Palestinian for: Clothes","اواعي"));
+        phrases.add(new Word("Palestinian for: Spider web","شعشبون" , R.raw.palas_shashabon, R.mipmap.palistine));
+        phrases.add(new Word("Palestinian for: Scooch over","ليز شوي", R.raw.palas_leez, R.mipmap.palistine));
+        phrases.add(new Word("Palestinian for: Clothes","اواعي", R.raw.palas_clothes, R.mipmap.palistine));
 
         phrases.add(new Word("Egyption for: How are you man","ازيك يا باشا",R.mipmap.msr, R.raw.egyezyak));
         phrases.add(new Word("Egyption for: How old are you?","عندك كم سنة؟ ",R.mipmap.msr ,R.raw.egyhowoldareyou));
         phrases.add(new Word("Egyption for: ٌٌRoom","أوضة ",R.mipmap.msr,R.raw.egyroom));
         phrases.add(new Word("Egyption for: Barely","بالـزور ",R.mipmap.msr, R.raw.egybilzoor));
 
-        phrases.add(new Word("Sham region for: What do you want?","شو بدك؟ "));
-        phrases.add(new Word("Sham region for: What?","شو؟ "));
-        phrases.add(new Word("Sham region for: Money","مصاري"));
-        phrases.add(new Word("Sham region for: I want this","بدي هاد "));
+//        phrases.add(new Word("Sham region for: What do you want?","شو بدك؟ ",));
+        phrases.add(new Word("Sham region for: What?","شو؟ ",R.raw.shu, R.mipmap.sham));
+        phrases.add(new Word("Sham region for: Money","مصاري", R.raw.palas_money, R.mipmap.sham));
+        phrases.add(new Word("Sham region for: I want this","بدي هاد ",R.raw.palas_want, R.mipmap.sham));
 
         phrases.add(new Word("Lebanese for: What is this thing","شو هيدا الشي", R.mipmap.leb, R.raw.lebshuhyda));
         phrases.add(new Word("Lebanese for: May your house get destroyed how much I loved you","يخرب بيتك شو حبيتك",R.mipmap.leb, R.raw.lebyhrebbytak));
@@ -86,11 +86,11 @@ public class ColloquialActivity extends AppCompatActivity {
 
             }
         });
-        AdView adView = findViewById(R.id.adViewColloquial);
-        AdRequest adRequest = new AdRequest.Builder()
-                .build();
-
-        adView.loadAd(adRequest);
+//        AdView adView = findViewById(R.id.adViewColloquial);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .build();
+//
+//        adView.loadAd(adRequest);
 
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
