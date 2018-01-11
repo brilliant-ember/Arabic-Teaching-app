@@ -23,16 +23,16 @@ public class FamilyActivity extends AppCompatActivity {
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Dad","اب"));
-        words.add(new Word("Mom","ام"));
-        words.add(new Word("Brother","اخ"));
-        words.add(new Word("Sister","اخت"));
-        words.add(new Word("Grandfather","جد"));
-        words.add(new Word("Grandmother","جدة"));
-        words.add(new Word("Son","ابن"));
-        words.add(new Word("Daughter","بنت"));
-        words.add(new Word("Wife","زوجة"));
-        words.add(new Word("Husband","زوج"));
+        words.add(new Word("Dad","اب", R.raw.dad));
+        words.add(new Word("Mom","ام",R.raw.mom));
+        words.add(new Word("Brother","اخ",R.raw.bro));
+        words.add(new Word("Sister","اخت",R.raw.sister));
+        words.add(new Word("Grandfather","جد",R.raw.grandpa));
+        words.add(new Word("Grandmother","جدة",R.raw.grandma));
+        words.add(new Word("Son","ابن", R.raw.son));
+        words.add(new Word("Daughter","بنت", R.raw.girl));
+        words.add(new Word("Wife","زوجة", R.raw.wife));
+        words.add(new Word("Husband","زوج", R.raw.husband));
 
 
         ListView root = (ListView) findViewById(R.id.familyRoot);
