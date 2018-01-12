@@ -134,7 +134,6 @@ public class PhrasesActivity extends AppCompatActivity {
 
             mp.release();
 
-
             mp = null;
         }
     }

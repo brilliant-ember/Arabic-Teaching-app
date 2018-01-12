@@ -20,6 +20,9 @@ public class ColloquialActivity extends AppCompatActivity {
 
     //This is the Slang activity, named colloquial for fancy reasons.
 
+    private MediaPlayer mp;
+    private MediaPlayer.OnCompletionListener isDone = new MediaPlayer.OnCompletionListener() {public void onCompletion(MediaPlayer mp) {}};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,17 +99,26 @@ public class ColloquialActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word current = (Word) adapter.getItem(position);
+                releaseMediaPlayer();;
                 if (current.getAudioResourceId() != 0){
-                MediaPlayer mp = MediaPlayer.create(ColloquialActivity.this, current.getAudioResourceId());
-                mp.start();}
+                mp = MediaPlayer.create(ColloquialActivity.this, current.getAudioResourceId());
+                mp.start();
+                mp.setOnCompletionListener(isDone);}
 
 
             }
         });
+ }
+    /**
+     * Clean up the media player by releasing its resources.
+     */
+    private void releaseMediaPlayer() {
+        if (mp != null) {
 
+            mp.release();
 
+            mp = null;
+        }
+    }
 
-
-
-            }
 }
