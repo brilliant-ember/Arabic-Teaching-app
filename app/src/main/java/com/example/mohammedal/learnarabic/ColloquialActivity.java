@@ -101,6 +101,10 @@ public class ColloquialActivity extends AppCompatActivity {
                 Word current = (Word) adapter.getItem(position);
                 releaseMediaPlayer();;
                 if (current.getAudioResourceId() != 0){
+
+                    System.out.println(current.getAudioResourceId());
+                    System.out.println(current.getArabic());
+
                 mp = MediaPlayer.create(ColloquialActivity.this, current.getAudioResourceId());
                 mp.start();
                 mp.setOnCompletionListener(isDone);}
