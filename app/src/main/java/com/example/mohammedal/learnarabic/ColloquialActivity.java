@@ -89,11 +89,11 @@ public class ColloquialActivity extends AppCompatActivity {
 
             }
         });
-//        AdView adView = findViewById(R.id.adViewColloquial);
-//        AdRequest adRequest = new AdRequest.Builder()
-//                .build();
-//
-//        adView.loadAd(adRequest);
+        AdView adView = findViewById(R.id.adViewColloquial);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+
+        adView.loadAd(adRequest);
 
         root.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
