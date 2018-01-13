@@ -79,7 +79,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("------        .       ------","ً"));
 
         phrases.add(new Word("Oh my god!","يااللهي!", R.raw.oh_my_god));
-        phrases.add(new Word("Call an ambulance","اتصل بالاسعاف",R.raw.amb, R.mipmap.hospital_symbol));
+        phrases.add(new Word("Call an ambulance","اتصل بالاسعاف",R.raw.goodluck, R.mipmap.hospital_symbol));
 
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً", R.raw.go_to_hell));
         phrases.add(new Word("Leave me alone","اتركني و شائني", R.raw.leave_me_alone));

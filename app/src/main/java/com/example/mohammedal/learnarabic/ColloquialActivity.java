@@ -39,9 +39,9 @@ public class ColloquialActivity extends AppCompatActivity {
 //        phrases.add(new Word("Yemeni for: Go away","روح لك",R.mipmap.yem, R.raw.yeindouf));
 
 
-        phrases.add(new Word("Palestinian for: Spider web","شعشبون" , R.raw.palas_shashabon, R.mipmap.palistine));
-        phrases.add(new Word("Palestinian for: Scooch over","ليز شوي", R.raw.palas_leez, R.mipmap.palistine));
-        phrases.add(new Word("Palestinian for: Clothes","اواعي", R.raw.palas_clothes, R.mipmap.palistine));
+        phrases.add(new Word("Palestinian for: Spider web","شعشبون" , R.mipmap.palistine , R.raw.palas_shashabon));
+        phrases.add(new Word("Palestinian for: Scooch over","ليز شوي", R.mipmap.palistine, R.raw.palas_leez));
+        phrases.add(new Word("Palestinian for: Clothes","اواعي", R.mipmap.palistine, R.raw.palas_clothes));
 
         phrases.add(new Word("Egyption for: How are you man","ازيك يا باشا",R.mipmap.msr, R.raw.egyezyak));
         phrases.add(new Word("Egyption for: How old are you?","عندك كم سنة؟ ",R.mipmap.msr ,R.raw.egyhowoldareyou));
@@ -49,9 +49,9 @@ public class ColloquialActivity extends AppCompatActivity {
         phrases.add(new Word("Egyption for: Barely","بالـزور ",R.mipmap.msr, R.raw.egybilzoor));
 
 //        phrases.add(new Word("Sham region for: What do you want?","شو بدك؟ ",));
-        phrases.add(new Word("Sham region for: What?","شو؟ ",R.raw.shu, R.mipmap.sham));
-        phrases.add(new Word("Sham region for: Money","مصاري", R.raw.palas_money, R.mipmap.sham));
-        phrases.add(new Word("Sham region for: I want this","بدي هاد ",R.raw.palas_want, R.mipmap.sham));
+        phrases.add(new Word("Sham region for: What?","شو؟ ", R.mipmap.sham,R.raw.shu));
+        phrases.add(new Word("Sham region for: Money","مصاري", R.mipmap.sham, R.raw.palas_money));
+        phrases.add(new Word("Sham region for: I want this","بدي هاد " ,R.mipmap.sham ,R.raw.palas_want));
 
         phrases.add(new Word("Lebanese for: What is this thing","شو هيدا الشي", R.mipmap.leb, R.raw.lebshuhyda));
         phrases.add(new Word("Lebanese for: May your house get destroyed how much I loved you","يخرب بيتك شو حبيتك",R.mipmap.leb, R.raw.lebyhrebbytak));
