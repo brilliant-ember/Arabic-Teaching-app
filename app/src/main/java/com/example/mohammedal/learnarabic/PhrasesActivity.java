@@ -34,7 +34,7 @@ public class PhrasesActivity extends AppCompatActivity {
         adView.loadAd(adRequest);
 
         final ArrayList<Word> phrases = new ArrayList<>();
-        phrases.add(new Word("Hello","مرحباً",R.raw.marhaba));
+        phrases.add(new Word("Hello","مرحباً",0,R.raw.marhaba));
         phrases.add(new Word("Come on","اهلاً و سهلاً",R.raw.ahlawasahla));
         phrases.add(new Word("Come on","تفضل",R.raw.welcome));
 
@@ -52,17 +52,17 @@ public class PhrasesActivity extends AppCompatActivity {
 
         phrases.add(new Word("---        .       ---","ً"));
 
-        phrases.add(new Word("How do I go to the market?","كيف اصل الى السوق؟ً",R.raw.market,R.mipmap.shopping));
+        phrases.add(new Word("How do I go to the market?","كيف اصل الى السوق؟ً",R.mipmap.shopping , R.raw.market));
 //        phrases.add(new Word("What are good places to visit?",";كيف اصل الى السوق؟ً"));
 
         phrases.add(new Word("How much does this cost?","بكم هذا؟ً", R.raw.how_much));
-        phrases.add(new Word("How do I go to the restaurant?","كيف اصل الى المطعم؟ً",R.raw.resturant, R.mipmap.resturnat));
-        phrases.add(new Word("How can I get to the hotel?","كيف اصل الى الفندق؟ً",R.raw.hotel, R.mipmap.hotel));
-        phrases.add(new Word("How can I get to the hospital?","كيف اصل الى المستشفى؟ً",R.raw.how_to_reach_hospital, R.mipmap.hospital_symbol));
-        phrases.add(new Word("How can I get to the airport?","كيف اصل الى المطار؟ً",R.raw.airport, R.mipmap.airplane));
+        phrases.add(new Word("How do I go to the restaurant?","كيف اصل الى المطعم؟ً" , R.mipmap.resturnat ,R.raw.resturant));
+        phrases.add(new Word("How can I get to the hotel?","كيف اصل الى الفندق؟ً" , R.mipmap.hotel ,R.raw.hotel));
+        phrases.add(new Word("How can I get to the hospital?","كيف اصل الى المستشفى؟ً", R.mipmap.hospital_symbol ,R.raw.how_to_reach_hospital));
+        phrases.add(new Word("How can I get to the airport?","كيف اصل الى المطار؟ً", R.mipmap.airplane, R.raw.airport));
 
 
-        phrases.add(new Word("Where is the exit?","اين المخرج؟ً",R.raw.where_exit, R.mipmap.exit));
+        phrases.add(new Word("Where is the exit?","اين المخرج؟ً", R.mipmap.exit ,R.raw.where_exit));
 
 
         phrases.add(new Word("Thank you very much","شكراَ جزيلاًَ",R.raw.thanks));
@@ -79,7 +79,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("------        .       ------","ً"));
 
         phrases.add(new Word("Oh my god!","يااللهي!", R.raw.oh_my_god));
-        phrases.add(new Word("Call an ambulance","اتصل بالاسعاف",R.raw.goodluck, R.mipmap.hospital_symbol));
+        phrases.add(new Word("Call an ambulance","اتصل بالاسعاف", R.mipmap.hospital_symbol,R.raw.amb));
 
         phrases.add(new Word("Go to hell","اذهب الى الجحيمً", R.raw.go_to_hell));
         phrases.add(new Word("Leave me alone","اتركني و شائني", R.raw.leave_me_alone));

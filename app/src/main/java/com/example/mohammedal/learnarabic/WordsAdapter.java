@@ -63,6 +63,12 @@ public class WordsAdapter extends BaseAdapter implements Filterable {
             ImageView img = convertView.findViewById(R.id.imageView);
             img.setImageResource(theNewWord.getImageResourceId());
         }
+        //in the phrases activity the img shows in all items with or without an img id, this line controls that so
+        //only items with and imgID show an image
+        else{
+            ImageView img = convertView.findViewById(R.id.imageView);
+            img.setImageResource(0);
+        }
 
 
         return convertView;
